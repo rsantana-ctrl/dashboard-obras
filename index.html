@@ -3,54 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Obras</title>
+    <title>SGF - Dashboard de Obras</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-        .container {
-            flex-grow: 1;
-            width: 100%;
-            padding: 10px;
-        }
-        iframe {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-        }
+        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .container { max-width: 1200px; margin: auto; }
+        iframe { border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; }
+        .analise-setion { background: #f9f9f9; padding: 20px; margin-top: 30px; border-radius: 8px; border-left: 5px solid #2980b9; }
     </style>
 </head>
 <body>
-
-    <header>
-        <h2>Memorial de Cálculo - Dashboard de Obras</h2>
-    </header>
-
     <div class="container">
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEtXxkyKdlr_u-9lkOy5dYCEx-riNJ1-vYw_OHNEy6v34W_ti_XEUjAJ36Cc3yMKDhh9J88EMzSZvI/pubhtml?widget=true&amp;headers=false&amp;chrome=false"></iframe>
-    </div>
+        <h2>Memorial de Cálculo - Iluminação Área Externa</h2>
+        
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHi2SEi6xzzFkKofJp6jOzWoA0epH2IfvsOpuLA6_rRtdv9ZX90XuO7dAMyTxzAw/pubhtml" 
+                width="100%" height="600" frameborder="0"></iframe>
 
+        <div class="analise-setion">
+            <h3>Análise Orientada à Decisão (SAD)</h3>
+            <p><strong>1. Itens na Faixa A:</strong> [Liste aqui os itens que somam os primeiros 80% do valor]</p>
+            <p><strong>2. Risco Financeiro:</strong> [Explique se o valor concentrado nesses itens é crítico para o orçamento]</p>
+            <p><strong>3. Prioridade de Fiscalização:</strong> [Indique onde você concentraria os esforços de auditoria]</p>
+            <p><strong>4. Destaque Técnico:</strong> [Há algum item da Faixa A que parece excessivamente caro ou tecnicamente complexo?]</p>
+        </div>
+    </div>
 </body>
 </html>
