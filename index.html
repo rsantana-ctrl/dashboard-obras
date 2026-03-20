@@ -10,10 +10,25 @@
         .container { max-width: 1200px; margin: auto; }
         iframe { border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; }
         .analise-setion { background: #f9f9f9; padding: 20px; margin-top: 30px; border-radius: 8px; border-left: 5px solid #2980b9; }
+        
+        /* Estilo para o botão de navegação */
+        .btn-grafico {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-grafico:hover { background-color: #1a5276; }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="grafico.html" class="btn-grafico">📊 Visualizar Gráfico ABC</a>
+
         <h2>Memorial de Cálculo - Iluminação Área Externa</h2>
         
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHi2SEi6xzzFkKofJp6jOzWoA0epH2IfvsOpuLA6_rRtdv9ZX90XuO7dAMyTxzAw/pubhtml" 
@@ -21,10 +36,10 @@
 
         <div class="analise-setion">
             <h3>Análise Orientada à Decisão (SAD)</h3>
-            <p><strong>1. Itens na Faixa A:</strong> [Liste aqui os itens que somam os primeiros 80% do valor]</p>
-            <p><strong>2. Risco Financeiro:</strong> [Explique se o valor concentrado nesses itens é crítico para o orçamento]</p>
-            <p><strong>3. Prioridade de Fiscalização:</strong> [Indique onde você concentraria os esforços de auditoria]</p>
-            <p><strong>4. Destaque Técnico:</strong> [Há algum item da Faixa A que parece excessivamente caro ou tecnicamente complexo?]</p>
+            <p><strong>1. Itens na Faixa A:</strong> Conforme a Curva ABC gerada, os itens de maior impacto financeiro estão concentrados na infraestrutura metálica e projetores.</p>
+            <p><strong>2. Risco Financeiro:</strong> A Faixa A representa a maior parte do orçamento, exigindo controle rigoroso de preços unitários.</p>
+            <p><strong>3. Prioridade de Fiscalização:</strong> O foco da auditoria deve ser a medição correta dos itens da Faixa A para evitar sobrepreço.</p>
+            <p><strong>4. Destaque Técnico:</strong> Verificação de conformidade técnica das especificações dos cabos e luminárias.</p>
         </div>
     </div>
 </body>
